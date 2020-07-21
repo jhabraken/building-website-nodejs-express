@@ -1,0 +1,49 @@
+<!-- The error textt is from https://bootsnipp.com/snippets/Qb71  . Search for Error page example and bootsnipp -->
+<html>
+  <head>
+    <title>
+      An error occured.
+    </title>
+    <link
+      href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="/css/error.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="error-template">
+            <h1>
+              Oops!
+            </h1>
+            <h2>
+              <%=status%> <%=message%>
+            </h2>
+
+            <div class="error-details">
+              Sorry, an error has occured, Requested page not found!
+            </div>
+            <div class="error-actions">
+              <a href="http://localhost:3000" class="btn btn-primary btn-lg"
+                ><span class="glyphicon glyphicon-home"></span> Take Me Home </a
+              ><a href="http://localhost:3000" class="btn btn-default btn-lg"
+                ><span class="glyphicon glyphicon-envelope"></span> Contact
+                Support
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <h4>
+      This is an error page created by &copy Job Habraken
+    </h4>
+  </footer>
+</html>
